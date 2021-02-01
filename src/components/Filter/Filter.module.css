@@ -1,0 +1,30 @@
+.filter{
+    display: flex;
+    justify-content:  flex-start;
+    background-color: #3F51B5;
+}
+.filter button {
+    border-radius: 0;
+}
+
+.item {
+    color:#ffff !important;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.active {
+    font-weight: bold !important;
+    background-color: #F50057 !important;
+}
+
+.search {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+}
+.search input {
+    padding: 3px;
+}

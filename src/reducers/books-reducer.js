@@ -1,7 +1,6 @@
 import {booksAPI} from "../api/api";
 
 
-
 const initialState = {
     isLoaded: false,
     books: null,
@@ -21,8 +20,6 @@ export const bookReducer = (state = initialState, action) => {
                 ...state, isLoaded: action.payload.isLoaded
             }
         }
-
-
         default:
             return state;
     }

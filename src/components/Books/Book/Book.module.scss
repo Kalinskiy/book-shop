@@ -1,57 +1,76 @@
 .book {
-    position: relative;
-    width: 20%;
-    margin: 10px;
+  position: relative;
+  width: 200px;
+  margin: 15px;
+  overflow: visible !important;
 
-
-}
-
-.imageDiv {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image {
-    position: relative;
-    min-width: 200px;
-    min-height: 250px;
-    max-height: 250px;
-    transition: opacity .3s;
-
-}
-
-.image:hover {
-    opacity: 0;
-
-}
-
-
-.button {
-    opacity: 0;
+  .price {
     position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-}
+    top: -10px;
+    left: -5px;
+    border-radius: 3px;
+    background-color: #f50057;
+    color: #ffff;
+    padding: 3px;
+  }
 
-.image:hover .button {
-    opacity: 1;
-
-
-
-
-}
-
-.title {
+  .title {
     text-align: center;
-    min-height: 70px;
-    max-height: 70px;
-    padding: 10px;
+    min-height: 60px;
+    max-height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 14px !important;
+    overflow: hidden;
+    padding-top: 15px;
+  }
 
+  .imageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .image {
+      position: relative;
+      width: 100%;
+      max-height: 270px;
+    }
+
+  }
+
+  .author {
+    text-align: center;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px !important;
+
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .button button {
+    width: 100%;
+    z-index: 100;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
