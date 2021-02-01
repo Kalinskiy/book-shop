@@ -1,0 +1,57 @@
+.book {
+    position: relative;
+    width: 20%;
+    margin: 10px;
+
+
+}
+
+.imageDiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    min-width: 200px;
+    min-height: 250px;
+    max-height: 250px;
+    transition: opacity .3s;
+
+}
+
+.image:hover {
+    opacity: 0;
+
+}
+
+
+.button {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.image:hover .button {
+    opacity: 1;
+
+
+
+
+}
+
+.title {
+    text-align: center;
+    min-height: 70px;
+    max-height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+}
